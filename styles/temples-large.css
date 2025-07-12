@@ -1,0 +1,48 @@
+/* was design on a large screen and is responsive for smaller screens. */
+
+
+/* Medium screens: 500px to 750px */
+@media screen and (min-width: 500px) and (max-width: 810px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        gap: 1rem;
+        justify-content: center;
+    }
+
+}
+
+/* Small screens: up to 499px */
+@media screen and (max-width: 499px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    main {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    main h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    img {
+        width: 100%;
+        height: 330px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+
+    .toggle-button .bar {
+        height: 2px;
+    }
+}
