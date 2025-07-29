@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nigeria</title>
+
+    <meta name="description"
+        content="Explore the culture, weather, and beauty of Nigeria with this responsive, interactive country page." />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/place.css" />
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="header">Nigeria</div>
+        <img src="images/rock.jpg" alt="Nigeria Flag" class="responsive-img" />
+        <div class="container">
+            <!-- Data Box -->
+            <div class="box data">
+                <h3>Data</h3>
+                <p><strong>Area:</strong> 923,769 sq km</p>
+                <p><strong>Population:</strong> 223,804,632</p>
+                <p><strong>Capital:</strong> Abuja</p>
+                <p><strong>Languages:</strong> English, Hausa, Yoruba, Igbo, others</p>
+                <p><strong>Currency:</strong> Nigerian Naira (₦)</p>
+                <p><strong>Time Zone:</strong> UTC+1</p>
+                <p><strong>Calling Code:</strong> +234</p>
+                <p><strong>Internet TLD:</strong> .ng</p>
+            </div>
+
+            <!-- Weather Box -->
+            <div class="box weather" id="weatherBox">
+                <h3>Weather <span id="extraIcon">⛅</span></h3>
+                <img id="weather-icon" src="images/cloud_sky_summer_sun_sunshine.svg" alt="weather icon"
+                    style="width:60px;height:60px;margin-top:10px;">
+                <p><strong>City:</strong> <span id="city">Abuja</span></p>
+                <p><strong>Temperature:</strong> <span id="temp">--</span></p>
+                <p><strong>Conditions:</strong> <span id="conditions">Sunny</span></p>
+                <p><strong>Wind:</strong> <span id="wind">--</span></p>
+            </div>
+        </div>
+
+        <div class="footer">
+            ©2025 Judge Paul John — Nigeria<br>
+            Last Modification: <span id="lastModified"></span>
+        </div>
+    </div>
+
+</body>
+
+</html>
